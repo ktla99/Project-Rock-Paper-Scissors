@@ -4,14 +4,15 @@ const paper = 'paper';
 const choices = [rock, paper, scissor];
 
 let computerSelection = choices[Math.floor(Math.random() * choices.length)];
-let playerSelection;
 
 console.log(computerSelection);
 
-let currentScore;
-let computerScore;
-let setNextGame;
-let setGameOver;
+const answers = document.querySelector('.answers');
+const lastResult = document.querySelector('.lastResult');
+const rightOrWrong = document.querySelector('.rightOrWrong');
+const confirmChoice = document.querySelector('.confirmChoice');
+const choiceField = document.querySelector('.choiceField');
+
 
 
 //Do a function with random number found above from 1-3 below
