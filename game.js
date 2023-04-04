@@ -14,9 +14,13 @@ let setGameOver;
 
 
 //Do a function with random number found above from 1-3 below
-function getComputerChoice () {
+function getComputerChoice (rock, paper, scissor) {
+    choices.Math.floor(Math.random() * choices.length)
+};
 
-}
+console.log(getComputerChoice);
+
+
 function checkAnswer() {
     const userAnswer = 
 
@@ -52,8 +56,3 @@ function playRound(playSelection, computerSelection) {
     }
 };
 
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
-
-function game(playRound); 
