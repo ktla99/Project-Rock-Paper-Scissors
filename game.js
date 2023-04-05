@@ -72,3 +72,13 @@ function scoreUpdate() {
     }
 }
 
+function playRound (playerSelection) {
+    computerPlay() = computerSelection();
+    choices.forEach(choice => {
+        choice.addEventListener (choice => {
+            playRound(choice.textContent();)
+        })
+    })
+    restart.addEventListener('click', gameStart);
+}
+
