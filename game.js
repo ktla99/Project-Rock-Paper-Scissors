@@ -10,7 +10,7 @@ gameStart();
 scoreUpdate();
 
 function computerPlay () {
-    computerSelection === Math.floor(Math.random() * (3) + 1);
+    let choice = Math.floor(Math.random() * (3) + 1);
     if (computerScore === 1) {
         results.textContent = "rock"; 
     } else if (computerScore === 2) {
