@@ -16,7 +16,7 @@ function computerPlay () {
     } else if (choice === 2) {
         return "paper"; 
     } else {
-        results.textContent = "scissors";
+        return "scissors";
     }  
 } 
 
