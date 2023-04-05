@@ -44,6 +44,14 @@ function rps (playerSelection, computerSelection) {
 function gameStart () {
     playerScore = 0;
     computerScore = 0;
-
+    choices.forEach(choice => {
+        choice.disabled = false
+    });
+    restart.style.visibility = 'hidden';
+    restart.disabled = true;
+    results.textContent = "";
+    score.textContent = `${playerScore} - ${computerScore}`;
 }
+
+
 
