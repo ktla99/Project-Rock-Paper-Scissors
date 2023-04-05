@@ -79,9 +79,10 @@ function playRound (playerSelection) {
     let computerSelection = computerPlay();
     rps(playerSelection, computerSelection)
 }
-    choices.forEach(choice => {
-        choice.addEventListener (choice => {
-            playRound(choice.textContent)
+
+choices.forEach(choice => {
+    choice.addEventListener (choice => {
+        playRound(choice.textContent);
         })
     });
 
