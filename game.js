@@ -30,7 +30,7 @@ function rps (playerSelection, computerSelection) {
         results.textContent = `You win! ${playerSelection} beats ${computerSelection}!`;
         ++playerScore;
         scoreUpdate();
-    } else if (playerSelection === "scissors" && computerScore === "paper") {
+    } else if (playerSelection === "scissors" && computerSelection === "paper") {
         results.textContent = `You win! ${playerSelection} beats ${computerSelection}!`;
         ++playerScore;
         scoreUpdate();
