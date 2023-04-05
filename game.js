@@ -71,7 +71,7 @@ function scoreUpdate() {
         score.textContent = "You lose!";
         gameEnd();
     } else {
-        `${playerScore} - ${computerScore}`;
+        score.textContent = `${playerScore} - ${computerScore}`;
     }
 }
 
