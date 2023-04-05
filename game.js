@@ -34,6 +34,8 @@ function rps (playerSelection, computerSelection) {
         results.textContent = `You win! ${playerSelection} beats ${computerSelection}!`;
         ++playerScore;
         scoreUpdate();
+    } else if (playerSelection === computerScore) {
+        results.textContent = `It is a tie!`;
     } else {
         results.textContent = `You lose! ${computerSelection} beats ${playerSelection}!`;
         ++computerScore;
@@ -58,6 +60,7 @@ function gameEnd () {
         choice.disabled = true;
     });
     restart.style.visibility = 'visible';
+    restart.disabled = false;
 }
 
 function scoreUpdate() {
