@@ -4,7 +4,7 @@ let computerScore = 0;
 const results = document.querySelector('.results');
 const score = document.querySelector('.score');
 const choices = document.querySelectorAll('#rps');
-const restart = document.querySelector('.restart');
+const restart = document.querySelector('#restart');
 
 gameStart();
 scoreUpdate();
