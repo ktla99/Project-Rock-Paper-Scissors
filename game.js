@@ -53,5 +53,10 @@ function gameStart () {
     score.textContent = `${playerScore} - ${computerScore}`;
 }
 
-
+function gameEnd () {
+    choices.forEach(choice => {
+        choice.disabled = true;
+    });
+    restart.style.visibility = 'visible';
+}
 
