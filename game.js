@@ -11,9 +11,9 @@ scoreUpdate();
 
 function computerPlay () {
     let choice = Math.floor(Math.random() * (3) + 1);
-    if (computerScore === 1) {
+    if (choice === 1) {
         results.textContent = "rock"; 
-    } else if (computerScore === 2) {
+    } else if (choice === 2) {
         results.textContent = "paper"; 
     } else {
         results.textContent = "scissors";
