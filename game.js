@@ -60,3 +60,15 @@ function gameEnd () {
     restart.style.visibility = 'visible';
 }
 
+function scoreUpdate() {
+    if (playerScore === 5) {
+        score.textContent = "You win!";
+        gameEnd(); 
+    } else if (computerScore === 5) {
+        score.textContent = "You lose!";
+        gameEnd();
+    } else {
+        `${playerScore} - ${computerScore}`;
+    }
+}
+
