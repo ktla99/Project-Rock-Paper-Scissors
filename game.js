@@ -81,7 +81,7 @@ function playRound (playerSelection) {
 }
 
 choices.forEach(choice => {
-    choice.addEventListener (choice => {
+    choice.addEventListener ('click', () => {
         playRound(choice.textContent);
         })
     });
