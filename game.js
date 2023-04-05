@@ -37,7 +37,7 @@ function rps (playerSelection, computerSelection) {
     } else if (playerSelection === computerSelection) {
         results.textContent = `It is a tie!`;
     } else {
-        results.textContent = `You lose! ${computerSelection} beats ${playerSelection}!`;
+        results.textContent = `You lose! ${playerSelection} loses to ${computerSelection}!`;
         ++computerScore;
         scoreUpdate();
     }
