@@ -87,5 +87,5 @@ choices.forEach(choice => {
     });
 
 restart.addEventListener('click', gameStart);
-}
+
 
