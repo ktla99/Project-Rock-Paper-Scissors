@@ -21,7 +21,7 @@ function computerPlay () {
 } 
 
 function rps (playerSelection, computerSelection) {
-    playerSelection === playerSelection.toLowerCase();
+    playerSelection = playerSelection.toLowerCase();
     if (playerSelection === "rock" && computerSelection === "scissors") {
         results.textContent = `You win! ${playerSelection} beats ${computerSelection}!`;
         ++playerScore;
