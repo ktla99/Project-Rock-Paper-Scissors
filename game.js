@@ -23,21 +23,21 @@ function computerPlay () {
 function rps (playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase();
     if (playerSelection === "rock" && computerSelection === "scissors") {
-        results.textContent = `You win! ${playerSelection} beats ${computerSelection}!`;
+        results.textContent = `Wise choice! Your ${playerSelection} demolished ${computerSelection}!`;
         ++playerScore;
         scoreUpdate();
     } else if (playerSelection === "paper" && computerSelection === "rock") {
-        results.textContent = `You win! ${playerSelection} beats ${computerSelection}!`;
+        results.textContent = `Quite a strategic decision! The thin ${playerSelection} sliced through the ${computerSelection}!`;
         ++playerScore;
         scoreUpdate();
     } else if (playerSelection === "scissors" && computerSelection === "paper") {
-        results.textContent = `You win! ${playerSelection} beats ${computerSelection}!`;
+        results.textContent = `A clean cut! Your choice of ${playerSelection} slit the ${computerSelection}!`;
         ++playerScore;
         scoreUpdate();
     } else if (playerSelection === computerSelection) {
-        results.textContent = `It is a tie!`;
+        results.textContent = `It was a tie! The battle continues!`;
     } else {
-        results.textContent = `You lose! ${playerSelection} loses to ${computerSelection}!`;
+        results.textContent = `Wrong decision traveler! Your choice of ${playerSelection} is susceptible to ${computerSelection}!`;
         ++computerScore;
         scoreUpdate();
     }
@@ -65,10 +65,10 @@ function gameEnd () {
 
 function scoreUpdate() {
     if (playerScore === 5) {
-        score.textContent = "You win! Good job!";
+        score.textContent = "Victory! You have escaped the forest! GG!";
         gameEnd(); 
     } else if (computerScore === 5) {
-        score.textContent = "You lost completely!";
+        score.textContent = "HAH! Pathetic! You are now lost in the forest for the rest of eternity!";
         gameEnd();
     } else {
         score.textContent = `${playerScore} - ${computerScore}`;
