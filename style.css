@@ -1,6 +1,7 @@
 * {
     font-family: 'Bruno Ace SC', cursive;
     margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1534269222346-5a896154c41d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80;);
 }
 
 .big-container {
@@ -27,6 +28,7 @@
 #rps {
     border-radius: 25px;
     border: 2px solid green;
+
 }
 
 .restart-button {
