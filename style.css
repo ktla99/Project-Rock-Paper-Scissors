@@ -1,3 +1,16 @@
 * {
     font-family: 'Bruno Ace SC', cursive;
 }
+
+.big-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+    padding-top: 100px;
+}
+
+.container {
+    display: flex;
+    gap: 250px;
+    justify-content: center;
+}
