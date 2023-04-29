@@ -16,12 +16,23 @@ body {
     color: #c0da74;
 }
 
+.sentence {
+    color: #beedaa;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    max-width: 950px;
+    margin: auto;
+}
+
 .container {
     display: flex;
     justify-content: center;
     gap: 400px;
     padding-top: 150px;
 }
+
+
 
 .results,
 .score {
