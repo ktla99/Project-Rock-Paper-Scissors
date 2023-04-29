@@ -5,12 +5,19 @@
 .big-container {
     display: flex;
     justify-content: center;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     padding-top: 100px;
 }
 
 .container {
     display: flex;
-    gap: 250px;
+    padding: 100px;
     justify-content: center;
+}
+
+.results,
+.score {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
 }
