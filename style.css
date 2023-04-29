@@ -20,6 +20,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 400px;
+    padding-top: 150px;
 }
 
 .results,
@@ -28,6 +29,7 @@ body {
     justify-content: center;
     padding-top: 5px;
     color: #c0da74;
+    font-weight: 800;
     padding-top: 100px;
     font-size: 40px;
 }
