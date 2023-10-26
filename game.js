@@ -48,6 +48,7 @@ function gameStart () {
     computerScore = 0;
     choices.forEach(choice => {
         choice.disabled = false
+        choice.style.visibility = "visible";
     });
     restart.style.visibility = 'hidden';
     restart.disabled = true;
@@ -58,6 +59,7 @@ function gameStart () {
 function gameEnd () {
     choices.forEach(choice => {
         choice.disabled = true;
+        choice.style.visibility = "hidden";
     });
     restart.style.visibility = 'visible';
     restart.disabled = false;
@@ -66,9 +68,11 @@ function gameEnd () {
 function scoreUpdate() {
     if (playerScore === 5) {
         score.textContent = "Victory! You have escaped the forest! GG!";
+        choices.disabled = true;
         gameEnd(); 
     } else if (computerScore === 5) {
         score.textContent = "HAH! Pathetic! You are now lost in the forest for the rest of eternity!";
+        choices.disabled = true;
         gameEnd();
     } else {
         score.textContent = `${playerScore} - ${computerScore}`;
