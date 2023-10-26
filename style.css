@@ -38,28 +38,24 @@ body {
     background-color: rgba(75, 218, 199, 0.4);
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15rem;
-    padding-top: 150px;
-}
-
-
 .results,
 .score {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5px;
     color: #41c061;
     font-weight: 800;
-    padding-top: 100px;
     font-size: 40px;
     text-align: center;
 }
 
+.results {
+    padding-top: 1em;
+}
+
+.score {
+    padding-top: 100px;
+}
 
 button {
     display: block;
@@ -71,6 +67,7 @@ button {
 }
 
 button:hover {
+    display: block;
     width: 120px;
     height: 80px;
     transition-duration: .1s;
@@ -87,5 +84,13 @@ button:hover {
     padding-top: 10px;
     visibility: hidden;
     padding-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+    gap: 5rem;
 }
 
